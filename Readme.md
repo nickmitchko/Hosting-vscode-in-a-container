@@ -2,7 +2,7 @@
 
 > InterSystems IRIS container with vscode and pre-connected
 
-| Item         | Price    |
+| Cred         | Value    |
 |--------------|:--------:|
 | User         |  _SYSTEM |
 | Password     |  SYS     |
@@ -22,7 +22,7 @@ This project creates an IRIS container with a hosted (web-based) version of vsco
 1. [Download](https://github.com/nickmitchko/Hosting-vscode-in-a-container/archive/refs/heads/master.zip) or `git clone https://github.com/nickmitchko/Hosting-vscode-in-a-container.git` this repository
 2. In the root of the project, run `docker build . -t vscode-irishealth-ml:latest --no-cache`
 3. Run `docker-compose up`
-    a. Not using docker compose? See [here](#No-Docker-Compose)
+    * Not using docker compose? See [here](#No-Docker-Compose)
 4. Navigate to [Management Portal](http://localhost:52773/csp/sys/%25CSP.Portal.Home.zen)
 5. Login with the user and password near the top of this guide
 6. Click VSCODE Link on the favorites pane
