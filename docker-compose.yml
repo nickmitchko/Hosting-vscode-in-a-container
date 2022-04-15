@@ -1,0 +1,19 @@
+version: "3.7"
+services:
+  vscode:
+    image: vscode-irishealth-ml:latest
+    command: --after "/bin/bash /install/boot.sh"
+    hostname: vscode-irishealth
+    init: true
+    ports:
+    - "51773:51773"
+    - "1972:1972"
+    - "52773:52773"
+    - "53773:53773"
+    - "9097:9097"
+    - "8080:8080"
+    - "8088:8888"
+    # volumes:
+    # - "./durable/:/durable/"
+    # environment:
+    # - ISC_DATA_DIRECTORY=/durable/iconfig

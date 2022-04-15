@@ -1,0 +1,13 @@
+
+zn "%SYS"
+do ##class(SYS.Container).PreventJournalRolloverMessage()
+do ##class(SYS.Container).SetMonitorStateOK()
+do ##class(SYS.Container).QuiesceForBundling()
+w ##class(Security.Users).UnExpireUserPasswords("*")
+
+zn "USER"
+zpm "install iris-history-monitor"
+
+do ##class(diashenrique.historymonitor.util.Favorite).%AddFavorite("VSCode", "http://localhost:8080/?workspace=/home/irisowner/code/workspace.code-workspace")
+
+halt

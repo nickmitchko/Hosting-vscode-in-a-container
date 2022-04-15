@@ -1,0 +1,18 @@
+{
+	"folders": [		
+		{
+            "name": "home",
+			"path": "/home/irisowner/code/"
+		},
+		{
+			"name": "IRIS:USER",
+			"uri": "isfs://default~iris:USER/"
+		}
+		
+	],
+	"settings": {
+		"workbench.colorTheme": "InterSystems Default Dark",
+		"jupyter.jupyterServerType": "remote",
+		"python.pythonPath": "/usr/irissys/bin/irispython"
+	}
+}
