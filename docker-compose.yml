@@ -2,7 +2,7 @@ version: "3.7"
 services:
   vscode:
     image: vscode-irishealth-ml:latest
-    command: --after "/bin/bash /install/boot.sh" --check-caps
+    command: --after "/bin/bash /install/boot.sh" --check-caps false
     hostname: vscode-irishealth
     init: true
     ports:
