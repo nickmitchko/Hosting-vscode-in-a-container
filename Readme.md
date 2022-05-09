@@ -87,5 +87,5 @@ docker run --name vscode -d \
     --publish 8080:8080 \
     --publish 8888:8888 \
     vscode-irishealth-ml:latest \
-    --after "/bin/bash /install/boot.sh"
+    --after "/bin/bash /install/boot.sh" --check-caps false
 ```
